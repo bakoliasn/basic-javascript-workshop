@@ -1,15 +1,23 @@
 //input string log first char 
 function initial (inputString){
-    console.log(inputString[0]);
+    return inputString[0];
 }
-initial("Nick");
-initial("hello");
-initial("");
+console.log(initial("Nick"));
+console.log(initial("hello"));
+console.log(initial(""));
 
 //input string log last char
 function last (inputString){
-    console.log(inputString[(inputString.length - 1)]);
+    return inputString[(inputString.length - 1)];
 }
-last("nick");
-last("");
+console.log(last("nick"));
+console.log(last(""));
 
+//input string and number log string at index number
+function stringNum (inputString, inputNumber){
+     return inputString[inputNumber];
+}
+console.log(stringNum("hello", 3));
+console.log(stringNum("hello", 2));
+
+//
