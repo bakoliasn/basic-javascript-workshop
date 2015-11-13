@@ -32,3 +32,20 @@ function multiply(a,b){
     return a*b;
 }
 console.log(multiply(4,6));
+
+//input numbers and an operation return the reslut
+function opp (num1, num2, operator){
+    switch (operator) {
+        case "add":
+            return num1 + num2;
+        case "subtract":
+            return num1 -num2;
+        case "mult":
+            return num1 * num2;
+        case "div":
+            return num1/num2;
+        default:
+            console.log("enter a valid operator");
+    }
+}
+console.log(opp(2,4,"mult"));
