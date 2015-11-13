@@ -49,3 +49,15 @@ function opp (num1, num2, operator){
     }
 }
 console.log(opp(2,4,"mult"));
+
+//input string and number return string number amount of times
+function stringRepeat(inputString, inputNumber) {
+    var array = [];
+    for(var i=0;i < inputNumber; i++){
+        array.push(inputString);
+    }
+    return array;
+}
+console.log(stringRepeat("hello", 5));
+
+//
