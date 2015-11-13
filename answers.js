@@ -26,3 +26,9 @@ function add(a, b){
 }
 console.log(add(4, 5));
 console.log(add(7, false));
+
+//multiplies a and b
+function multiply(a,b){
+    return a*b;
+}
+console.log(multiply(4,6));
