@@ -56,8 +56,18 @@ function stringRepeat(inputString, inputNumber) {
     for(var i=0;i < inputNumber; i++){
         array.push(inputString);
     }
-    return array;
+    return console.log(array);
 }
 console.log(stringRepeat("hello", 5));
 
-//
+
+
+//input string return string with index's reversed
+function reverse(inputString){
+    var array = [];
+    for(var i = 0; i <= inputString.length -1; i++){
+        array.push(inputString[(inputString.length - 1 - i)]);
+    }
+    return array;
+}
+console.log(reverse("nick"));
