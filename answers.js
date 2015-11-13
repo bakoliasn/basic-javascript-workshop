@@ -20,4 +20,9 @@ function stringNum (inputString, inputNumber){
 console.log(stringNum("hello", 3));
 console.log(stringNum("hello", 2));
 
-//
+//adds a + b
+function add(a, b){
+    return a + b;
+}
+console.log(add(4, 5));
+console.log(add(7, false));
