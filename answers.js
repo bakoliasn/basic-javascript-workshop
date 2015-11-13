@@ -72,7 +72,7 @@ function reverse(inputString){
     return array;
 }
 console.log(reverse("nick"));
-
+*/
 //returns the factorial of the input with recursion
 function factorial (number){
     if(number === 0){
@@ -81,32 +81,34 @@ function factorial (number){
     return number*(factorial(number-1));
 }
 console.log(factorial(5));
-*/
+
 
 //factorial with loop instead of recursion
 function facLoop(number){
-    var array = [];
-    for(var i=number;i>0;i--){
-      array.push(number);
-    }
     var sum = 1;
-    for (var j=0; j < array.length -2;j++){
-        sum *= array[j];
+    for(var i = number; i > 1; i--){
+        sum *= i;
     }
     return sum;
 }
 console.log(facLoop(5));
 
+
+
+
+/*
 //returns input string with first letters of every word in capitals
-/*function caps (inputString){
+function caps (inputString){
     var a = inputString;
     for(var i=0; i <inputString.length; i++){
         if(i === 0){
             a[i] = inputString[i].toUpperCase();
-        }else if(inputString[i]===" "){
+        }else if(inputString[i]===" " && i < inputString.length){
             a[i+1]= inputString[i+1].toUpperCase();
         }
     }
     return a;
 }
-console.log(caps("hello my name is nick")); */
+console.log(caps("hello my name is nick"));
+
+
