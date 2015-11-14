@@ -150,7 +150,7 @@ function large (inputArray){
 }
 var a = [1,5,6,8,3,5,7];
 console.log(large(a));
-*/
+
 
 //input array returns only truthy values
 function truthy (array){
@@ -164,3 +164,54 @@ function truthy (array){
 }
 var sampleArray = [false,true,true,true,false];
 console.log(truthy(sampleArray));
+
+
+// another way to do truthy
+function truthy2 (array){
+    return array.filter(function(arg){
+        if(arg){
+            return true;
+        } else return false;
+    });
+}
+var array1 =[false,false,true];
+console.log(truthy2(array1));
+
+
+
+
+//takes an array of numbers and returns the sum
+function sum (array){
+    var total = 0;
+    for (var i = 0; i < array.length; i++){
+        total += array[i];
+    }
+    return total;
+}
+var numberArray = [3,2,3,3,5,5,7,74,3,2,,5,5,7,8];
+console.log(sum(numberArray));
+*/
+
+//inputs 2 arrays and returns one with only the unique values
+function unique(array1, array2){
+   var a = array1.concat(array2);
+   var array=[];
+   var counter =0;
+   for(var i = 0; i < a.length; i++){
+       counter = 0;
+       for(var j= 0; j < a.length; j++){
+           if(a[i] === a[j]){
+               counter++;
+           }
+       }
+       if(counter < 2){
+           array.push(a[i]);
+       }
+     
+   }
+   return array;
+}
+var test2 = [1,5,6,8,3,7];
+var test3 = [1,6,3,5,7];
+
+console.log(unique(test2, test3));
