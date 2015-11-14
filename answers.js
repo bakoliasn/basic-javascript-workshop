@@ -190,7 +190,7 @@ function sum (array){
 }
 var numberArray = [3,2,3,3,5,5,7,74,3,2,,5,5,7,8];
 console.log(sum(numberArray));
-*/
+
 
 //inputs 2 arrays and returns one with only the unique values
 function unique(array1, array2){
@@ -215,3 +215,19 @@ var test2 = [1,5,6,8,3,7];
 var test3 = [1,6,3,5,7];
 
 console.log(unique(test2, test3));
+*/
+
+//inputs an array and a function then creats a new array by passing each index of the input array through the input function
+function nArray (arr, func){
+    var tempArray = [];
+    for(var i = 0; i < arr.length; i++){
+        tempArray.push(func(arr[i]));
+    }
+    return tempArray;
+}
+
+var testArray = [4,5,6,2,4];
+function add1(x){
+    return x+1;
+}
+console.log(nArray(testArray, add1));
