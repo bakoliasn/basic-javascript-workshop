@@ -135,7 +135,7 @@ function long (inputString){
    return word;
 }
 console.log(long("hello my name is nicholas"));
-*/
+
 
 //input array return largest number
 function large (inputArray){
@@ -150,3 +150,17 @@ function large (inputArray){
 }
 var a = [1,5,6,8,3,5,7];
 console.log(large(a));
+*/
+
+//input array returns only truthy values
+function truthy (array){
+    var newArray = [];
+    for (var i = 0; i < array.length; i++){
+        if (array[i]){
+            newArray.push(array[i]);
+        }
+    }
+    return newArray;
+}
+var sampleArray = [false,true,true,true,false];
+console.log(truthy(sampleArray));
