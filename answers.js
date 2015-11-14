@@ -114,7 +114,10 @@ function caps (inputString){
     return a;
 }
 console.log(caps("hello my name is nick"));
-*/
+
+
+
+
 
 //input string return longest word in string
 function long (inputString){
@@ -132,3 +135,18 @@ function long (inputString){
    return word;
 }
 console.log(long("hello my name is nicholas"));
+*/
+
+//input array return largest number
+function large (inputArray){
+    var temp = 0;
+    for(var i = 0; i <inputArray.length; i++){
+        if(inputArray[i] > temp){
+            temp = inputArray[i];
+            
+        }
+    }
+    return temp;
+}
+var a = [1,5,6,8,3,5,7];
+console.log(large(a));
