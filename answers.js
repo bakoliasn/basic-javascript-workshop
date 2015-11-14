@@ -96,7 +96,7 @@ console.log(facLoop(5));
 
 
 
-*/
+
 //returns input string with first letters of every word in capitals
 function caps (inputString){
     var a = "";
@@ -114,4 +114,21 @@ function caps (inputString){
     return a;
 }
 console.log(caps("hello my name is nick"));
+*/
 
+//input string return longest word in string
+function long (inputString){
+    var array = inputString.split(" ");
+    var biggestIndex = 0;
+    var word = null;
+    console.log(array);
+    for (var i = 0; i < array.length; i++){
+        if(array[i].length > biggestIndex){
+            word = array[i];
+            biggestIndex = word.length
+            console.log(array);
+        }
+    }
+   return word;
+}
+console.log(long("hello my name is nicholas"));
