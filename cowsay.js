@@ -27,4 +27,4 @@ function cowsay(text){
 }
     
 }
-cowsay("hello this should be a string of over 30 chars i hope but i didn't count"); 
+cowsay("i love you mariah!"); 
